@@ -3,6 +3,7 @@ import { BackgroundBeams } from "../components/background-beams";
 import Link from 'next/link'; // Import the Link component
 import { UserButton, auth } from "@clerk/nextjs"; // Combine imports for clarity
 import { ClerkProvider, SignedIn, SignedOut, SignInButton } from "@clerk/nextjs";
+import FileUpload from "../components/fileUpload";
 
 function Header() {
   return (
@@ -69,6 +70,7 @@ export default async function Home() {
               </Link>
             )}
           </div>
+          <FileUpload />
           <BackgroundBeams />
         </div>
       </div>
