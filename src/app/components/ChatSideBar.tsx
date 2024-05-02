@@ -6,7 +6,7 @@ import { PlusCircle, MessageCircle } from 'lucide-react';
 import NewChat from './createNewChat'; // Corrected import
 
 type Props = {
-  chats: { id: number; messages: { id: number; chatId: number; content: string; createdAt: string; role: 'user' | 'system' }[]; createdAt: string; userId: string; fileKey:string}[];
+  chats: { id: number; messages: { id: number; chatId: number; content: string; createdAt: string; role: 'user' | 'system' }[]; createdAt: string; userId: string;}[];
   chatId: number;
 };
 
